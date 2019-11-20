@@ -13,10 +13,6 @@ else:
         print(0)
     
     else:
-      
-        h = (2 * X - Y) // 3
-        v = (2 * Y - X) // 3
-
         def extgcd(a, b):
             if b == 0:
                 x = 1
@@ -38,5 +34,8 @@ else:
                 inv_i = low_inverse(i + 1)
                 ret = ret * (numerator - i) * inv_i % MOD
             return ret
+
+        h = (2 * X - Y) // 3
+        v = (2 * Y - X) // 3
 
         print(low_combination(h, v))
