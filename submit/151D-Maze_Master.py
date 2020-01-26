@@ -27,7 +27,7 @@ def main():
             if S[h][w] == '.':
                 tmp_ret = 0
                 maze = deepcopy(S)
-                maze[h][w] = tmp_ret
+                maze[h][w] = '#'
                 
                 q1 = Queue()
                 q1.put((h, w))
